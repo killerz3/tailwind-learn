@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwind build -i src/style.css -o public/style.css --watch"
+    "build-css": "tailwind build -i src/style.css -o public/style.css --watch",
+    "build": "cross-env NODE_ENV=production postcss src/tailwind.css -o public/style.css"
   },
   "author": "",
   "license": "ISC",
